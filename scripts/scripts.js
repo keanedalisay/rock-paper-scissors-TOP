@@ -23,6 +23,9 @@
 
     */
 
+// Create a function to start the game
 
+    // Create a loop to count the number of rounds
+    // It should return the round function above
 
 
