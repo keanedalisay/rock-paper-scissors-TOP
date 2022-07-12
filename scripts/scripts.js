@@ -1,5 +1,5 @@
 // Create a function to act as the Computer/AI Player
-
+function computerPlay(){
     /* It should return || select
 
         Rock
@@ -7,7 +7,10 @@
         Scissors
 
     randomly */
-
+    const objectInPlay = ['Rock', 'Paper', 'Scissors'];
+    const randomObject = Math.floor(Math.random() * 3);
+    return objectInPlay[randomObject];
+}
 // Create a function to simulate a round of Rock Paper Scissors
 /* It should take in two parameters
 
