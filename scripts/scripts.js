@@ -1,27 +1,13 @@
-// Create a function to act as the Computer/AI Player
 function computerPlay(){
-    /* It should return || select
-
-        Rock
-        Paper
-        Scissors
-
-    randomly */
     const objectInPlay = ['ROCK', 'PAPER', 'SCISSORS'];
     const randomObject = Math.floor(Math.random() * 3);
     return objectInPlay[randomObject];
 }
-// Create a function to simulate a round of Rock Paper Scissors
+
 let playerScore = 0;
 let computerScore = 0;
 
 function playRound(playerSelection, computerSelection){
-/* It should take in two parameters
-
-    The players selection
-    The computers selection (which is the first function above)
-
-*/
     const playerPlay = prompt('Welcome to Rock Paper Scissors! Which object would you like to start the round with?');
     playerSelection = playerPlay.toUpperCase();
     computerSelection = computerPlay();
@@ -68,21 +54,13 @@ function playRound(playerSelection, computerSelection){
         return console.log('Player cuts through! Scissors split Paper into two!');
     }
     return console.log('Whoops, looks like we got an interuption... hang in there for a sec.');
-    /* It should return a string that
-
-        says either You Win
-        or You Lose
-
-    */
 }
 
-// Create a function to start the game
+
 function game(){
-    // Create a loop to count the number of rounds
     for (let i = 0; i < 5; i++){
         playRound();
     }
-    // It should return the round function above
     if (playerScore > computerScore){
         return console.log(`Player wins the game! Computer sucks!`);
     }
