@@ -60,10 +60,14 @@ function playRound(playerSelection, computerSelection){
     */
 }
 
-playRound();
 // Create a function to start the game
-
+function game(){
     // Create a loop to count the number of rounds
+    for (let i = 0; i < 5; i++){
+        playRound();
+    }
     // It should return the round function above
+}
 
+game();
 
