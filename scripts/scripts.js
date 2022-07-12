@@ -7,7 +7,7 @@ function computerPlay(){
         Scissors
 
     randomly */
-    const objectInPlay = ['Rock', 'Paper', 'Scissors'];
+    const objectInPlay = ['ROCK', 'PAPER', 'SCISSORS'];
     const randomObject = Math.floor(Math.random() * 3);
     return objectInPlay[randomObject];
 }
