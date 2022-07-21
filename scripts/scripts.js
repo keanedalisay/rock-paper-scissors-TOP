@@ -3,6 +3,8 @@ buttons.forEach((button) => {
     button.addEventListener('click', playRound)
 })
 
+const display = document.querySelector('#display');
+
 function computerPlay(){
     const objectInPlay = ['ROCK', 'PAPER', 'SCISSORS'];
     const randomObject = Math.floor(Math.random() * 3);
