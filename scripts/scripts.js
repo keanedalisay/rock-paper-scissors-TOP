@@ -57,20 +57,4 @@ function playRound(playerSelection, computerSelection){
 }
 
 
-function game(){
-    for (let i = 0; i < 5; i++){
-        playRound();
-    }
-    if (playerScore === computerScore){
-        return console.log(`Wow! It's a tie!`);
-    }
-    else if (playerScore > computerScore){
-        return console.log(`Player wins the game! Computer sucks!`)
-    }
-    else{
-        return console.log(`Computer triumphs! Maachine beats man!`);
-    }
-}
-
-game();
 
