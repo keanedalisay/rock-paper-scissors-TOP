@@ -13,7 +13,7 @@
     --paper-red: #FF5A5A77;
     --scissors-yellow: #FFED4ABB;
     --announcer-card: min(80%, 90rem);
-    --announcer-hr-pos: clamp(4rem, 10vw, 10rem);
+    --announcer-hr-pos: clamp(4rem, 10vw, 9rem);
     --announcer-text: clamp(1rem, 5vw, 5rem);
     --score-board: min(35%, 30rem);
     --score-board-text: clamp(2rem, 4vw, 4rem);
