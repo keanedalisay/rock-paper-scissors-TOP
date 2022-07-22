@@ -22,3 +22,6 @@
 div.container, header, main, footer{
     width: 100%;
 }
+header{
+    height: 15vh;
+}
