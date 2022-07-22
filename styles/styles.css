@@ -17,6 +17,7 @@
     --announcer-text: clamp(1rem, 5vw, 5rem);
     --score-board-text: clamp(2rem, 4vw, 4rem);
     --choice-card: min(50%, 30rem);
+    --copyright-text: clamp(1.2rem, 3vw, 2.5rem);
 }
 
 html{
@@ -147,12 +148,13 @@ div.buttonBoard > button > object{
     width: min(10vw, 8rem);
     height: min(10vw, 8rem);
 }
-/* Center buttons.
-    Set border radius to 50%.
-    Adjust width of objects.
-    Space-evenly buttons.
-    */
 
 footer{
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.copyrightCard{
+    font-size: var(--copyright-text);
 }
