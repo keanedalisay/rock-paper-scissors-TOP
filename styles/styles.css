@@ -12,6 +12,7 @@
     --rock-blue: #6262FF;
     --paper-red: #FF5A5A;
     --scissors-yellow: #FFED4A;
+    --announcer-text: clamp(1rem, 5vw, 5rem);
 }
 
 html{
@@ -26,12 +27,17 @@ div.container, header, main, footer{
     width: 100%;
     font-family: 'Bahnschrift', Helvetica, sans-serif;
 }
+
 header{
     height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+div.announcerCard > .announcerText{
+    font-size: var(--announcer-text);
+}
+
 main{
     height: 75vh;
 }
