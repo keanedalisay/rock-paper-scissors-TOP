@@ -12,6 +12,8 @@
     --rock-blue: #6262FF;
     --paper-red: #FF5A5A;
     --scissors-yellow: #FFED4A;
+    --announcer-card: min(80%, 90rem);
+    --announcer-thematic: clamp(4rem, 10vw, 10rem);
     --announcer-text: clamp(1rem, 5vw, 5rem);
 }
 
@@ -33,6 +35,20 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+div.announcerCard{
+    width: var(--announcer-card);
+    text-align: center;
+}
+div.announcerCard::before{
+    width: 100%;
+    height: clamp(0.5rem, 1vw, 0.8rem);
+    display: flex;
+    position: relative;
+    top: var(--announcer-thematic);
+    background-color: black;
+    content: '';
+    
 }
 div.announcerCard > .announcerText{
     font-size: var(--announcer-text);
