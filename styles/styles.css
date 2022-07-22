@@ -103,8 +103,13 @@ div.displayBoard > div{
 div.displayBoard > div.playerChoice{
     border-right: 0.5rem solid var(--display-black);
 }
-div.playerChoice > object, div.aiChoice > object{
+div.playerChoice > object{
     width: 45%;
+    transform: rotate(45deg);
+}
+div.aiChoice > object{
+    width: 45%;
+    transform: rotate(-45deg);
 }
 div.buttonBoard{
     margin: auto 0;
