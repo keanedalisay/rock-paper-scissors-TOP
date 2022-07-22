@@ -21,6 +21,7 @@
 }
 div.container, header, main, footer{
     width: 100%;
+    font-family: 'Bahnschrift', Helvetica, sans-serif;
 }
 header{
     height: 15vh;
