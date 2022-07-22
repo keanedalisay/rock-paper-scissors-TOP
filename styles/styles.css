@@ -13,11 +13,13 @@
     --paper-red: #FF5A5A77;
     --scissors-yellow: #FFED4ABB;
     --announcer-card: min(80%, 90rem);
-    --announcer-thematic: clamp(4rem, 10vw, 10rem);
+    --announcer-hr-pos: clamp(4rem, 10vw, 10rem);
     --announcer-text: clamp(1rem, 5vw, 5rem);
+    --score-board: min(35%, 30rem);
     --score-board-text: clamp(2rem, 4vw, 4rem);
     --choice-card: min(50%, 30rem);
     --copyright-text: clamp(1.2rem, 3vw, 2.5rem);
+    --shadow-pos: min(1vw, 0.8rem);
 }
 
 html{
@@ -48,7 +50,7 @@ div.announcerCard::before{
     height: clamp(0.5rem, 1vw, 0.8rem);
     display: flex;
     position: relative;
-    top: var(--announcer-thematic);
+    top: var(--announcer-hr-pos);
     background-color: black;
     content: '';
 }
@@ -68,7 +70,7 @@ div.scoreBoard{
     height: clamp(5rem, 10vw, 12rem);
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: repeat(2, min(35%, 30rem));
+    grid-template-columns: repeat(2, var(--score-board));
 }
 div.playerScore, div.aiScore{
     display: grid;
@@ -103,7 +105,6 @@ div.playerChoice > object, div.aiChoice > object{
     width: 45%;
 }
 div.buttonBoard{
-    border: 1px solid black;
     width: 100%;
     height: min(25%, 20rem);
     display: flex;
@@ -119,29 +120,29 @@ div.buttonBoard > button{
 }
 div.buttonBoard > button.rock{
     transition: all ease-in-out 0.03s;
-    box-shadow: min(1vw, 0.8rem) min(1vw, 0.8rem) var(--rock-blue);
+    box-shadow: var(--shadow-pos) var(--shadow-pos) var(--rock-blue);
 }
 div.buttonBoard > button.rock:active{
-    top: min(1vw, 0.8rem);
-    left: min(1vw, 0.8rem);
+    top: var(--shadow-pos);
+    left: var(--shadow-pos);
     box-shadow: 0 0 var(--rock-blue);
 }
 div.buttonBoard > button.paper{
     transition: all ease-in-out 0.03s;
-    box-shadow: min(1vw, 0.8rem) min(1vw, 0.8rem) var(--paper-red);
+    box-shadow: var(--shadow-pos) var(--shadow-pos) var(--paper-red);
 }
 div.buttonBoard > button.paper:active{
-    top: min(1vw, 0.8rem);
-    left: min(1vw, 0.8rem);
+    top: var(--shadow-pos);
+    left: var(--shadow-pos);
     box-shadow: 0 0 var(--paper-red);
 }
 div.buttonBoard > button.scissors{
     transition: all ease-in-out 0.03s;
-    box-shadow: min(1vw, 0.8rem) min(1vw, 0.8rem) var(--scissors-yellow);
+    box-shadow: var(--shadow-pos) var(--shadow-pos) var(--scissors-yellow);
 }
 div.buttonBoard > button.scissors:active{
-    top: min(1vw, 0.8rem);
-    left: min(1vw, 0.8rem);
+    top: var(--shadow-pos);
+    left: var(--shadow-pos);
     box-shadow: 0 0 var(--scissors-yellow);
 }
 div.buttonBoard > button > object{
