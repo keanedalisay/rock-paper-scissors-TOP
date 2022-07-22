@@ -16,6 +16,7 @@
     --announcer-thematic: clamp(4rem, 10vw, 10rem);
     --announcer-text: clamp(1rem, 5vw, 5rem);
     --score-board-text: clamp(2rem, 4vw, 4rem);
+    --choice-card: min(50%, 30rem);
 }
 
 html{
@@ -82,7 +83,24 @@ div.playerScore > div.player, div.aiScore > div.ai{
     border-right: 0.3rem solid var(--display-black);
     font-weight: 600;
 }
-
+div.displayBoard{
+    width: 100%;
+    height: min(40%, 30rem);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, var(--choice-card));
+}
+div.displayBoard > div{
+    display: flex;
+    justify-content: center;
+    background-color: var(--display-grey);
+}
+div.displayBoard > div.playerChoice{
+    border-right: 0.5rem solid var(--display-black);
+}
+div.playerChoice > object, div.aiChoice > object{
+    width: 45%;
+}
 
 footer{
     height: 10vh;
