@@ -17,8 +17,8 @@
     --announcer-text: clamp(1rem, 5vw, 5rem);
     --score-board: min(35%, 30rem);
     --score-board-text: clamp(2rem, 4vw, 4rem);
-    --choice-card: min(50%, 30rem);
-    --copyright-text: clamp(1.2rem, 3vw, 2.5rem);
+    --choice-card: min(40vw, 30rem);
+    --copyright-text: clamp(1.2rem, 3vw, 2rem);
     --shadow-pos: min(1vw, 0.8rem);
 }
 
@@ -47,7 +47,7 @@ div.announcerCard{
 }
 div.announcerCard::before{
     width: 100%;
-    height: clamp(0.5rem, 1vw, 0.8rem);
+    height: clamp(0.5rem, 1vw, 0.7rem);
     display: flex;
     position: relative;
     top: var(--announcer-hr-pos);
@@ -66,8 +66,9 @@ main{
     align-items: center;
 }
 div.scoreBoard{
+    margin: auto 0;
     width: 100%;
-    height: clamp(5rem, 10vw, 12rem);
+    height: clamp(5rem, 10vw, 10rem);
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(2, var(--score-board));
@@ -87,8 +88,9 @@ div.playerScore > div.player, div.aiScore > div.ai{
     font-weight: 600;
 }
 div.displayBoard{
+    margin: auto 0;
     width: 100%;
-    height: min(40%, 30rem);
+    height: min(40vw, 30rem);
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, var(--choice-card));
@@ -105,15 +107,16 @@ div.playerChoice > object, div.aiChoice > object{
     width: 45%;
 }
 div.buttonBoard{
-    width: 100%;
-    height: min(25%, 20rem);
+    margin: auto 0;
+    width: min(100%, 100rem);
+    height: min(25vw, 15rem);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 div.buttonBoard > button{
     position: relative;
-    padding: min(4vw, 3rem);
+    padding: min(4vw, 2.5rem);
     border: none;
     border-radius: 50%;
     background-color: var(--display-grey);
