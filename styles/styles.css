@@ -15,6 +15,7 @@
     --announcer-card: min(80%, 90rem);
     --announcer-thematic: clamp(4rem, 10vw, 10rem);
     --announcer-text: clamp(1rem, 5vw, 5rem);
+    --score-board-text: clamp(2rem, 4vw, 4rem);
 }
 
 html{
@@ -56,20 +57,32 @@ div.announcerCard > .announcerText{
 main{
     height: 75vh;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
 div.scoreBoard{
+    width: 100%;
+    height: clamp(5rem, 10vw, 12rem);
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, min(35%, 30rem));
+}
+div.playerScore, div.aiScore{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+div.playerScore > div, div.aiScore > div{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: var(--score-board-text);
 }
 div.playerScore > div.player, div.aiScore > div.ai{
-    width: 50%;
+    border-right: 0.3rem solid var(--display-black);
+    font-weight: 600;
 }
-div.playerScore > div.score, div.aiScore > div.score{
-    width: 50%;
-}
+
 
 footer{
     height: 10vh;
