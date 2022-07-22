@@ -64,6 +64,12 @@ div.scoreBoard{
     justify-content: center;
     align-items: center;
 }
+div.playerScore > div.player, div.aiScore > div.ai{
+    width: 50%;
+}
+div.playerScore > div.score, div.aiScore > div.score{
+    width: 50%;
+}
 
 footer{
     height: 10vh;
