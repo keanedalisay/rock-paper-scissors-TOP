@@ -9,9 +9,9 @@
     --display-black: #000000;
     --display-grey: #F1F1F1;
     --right-green: #A6FFA6;
-    --rock-blue: #6262FF;
-    --paper-red: #FF5A5A;
-    --scissors-yellow: #FFED4A;
+    --rock-blue: #6262FFAA;
+    --paper-red: #FF5A5A77;
+    --scissors-yellow: #FFED4ABB;
     --announcer-card: min(80%, 90rem);
     --announcer-thematic: clamp(4rem, 10vw, 10rem);
     --announcer-text: clamp(1rem, 5vw, 5rem);
@@ -101,6 +101,57 @@ div.displayBoard > div.playerChoice{
 div.playerChoice > object, div.aiChoice > object{
     width: 45%;
 }
+div.buttonBoard{
+    border: 1px solid black;
+    width: 100%;
+    height: min(25%, 20rem);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+div.buttonBoard > button{
+    position: relative;
+    padding: min(4vw, 3rem);
+    border: none;
+    border-radius: 50%;
+    background-color: var(--display-grey);
+}
+div.buttonBoard > button.rock{
+    transition: all ease-in-out 0.03s;
+    box-shadow: min(1vw, 0.8rem) min(1vw, 0.8rem) var(--rock-blue);
+}
+div.buttonBoard > button.rock:active{
+    top: min(1vw, 0.8rem);
+    left: min(1vw, 0.8rem);
+    box-shadow: 0 0 var(--rock-blue);
+}
+div.buttonBoard > button.paper{
+    transition: all ease-in-out 0.03s;
+    box-shadow: min(1vw, 0.8rem) min(1vw, 0.8rem) var(--paper-red);
+}
+div.buttonBoard > button.paper:active{
+    top: min(1vw, 0.8rem);
+    left: min(1vw, 0.8rem);
+    box-shadow: 0 0 var(--paper-red);
+}
+div.buttonBoard > button.scissors{
+    transition: all ease-in-out 0.03s;
+    box-shadow: min(1vw, 0.8rem) min(1vw, 0.8rem) var(--scissors-yellow);
+}
+div.buttonBoard > button.scissors:active{
+    top: min(1vw, 0.8rem);
+    left: min(1vw, 0.8rem);
+    box-shadow: 0 0 var(--scissors-yellow);
+}
+div.buttonBoard > button > object{
+    width: min(10vw, 8rem);
+    height: min(10vw, 8rem);
+}
+/* Center buttons.
+    Set border radius to 50%.
+    Adjust width of objects.
+    Space-evenly buttons.
+    */
 
 footer{
     height: 10vh;
