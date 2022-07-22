@@ -19,4 +19,6 @@
     margin: 0;
     padding: 0;
 }
-
+div.container, header, main, footer{
+    width: 100%;
+}
