@@ -67,7 +67,7 @@ main{
 }
 div.scoreBoard{
     margin: auto 0;
-    width: 100%;
+    width: min(100%, 100rem);
     height: clamp(5rem, 10vw, 10rem);
     display: grid;
     justify-content: space-evenly;
