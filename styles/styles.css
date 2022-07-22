@@ -25,3 +25,6 @@ div.container, header, main, footer{
 header{
     height: 15vh;
 }
+main{
+    height: 75vh;
+}
