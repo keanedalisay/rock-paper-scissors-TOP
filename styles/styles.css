@@ -48,7 +48,6 @@ div.announcerCard::before{
     top: var(--announcer-thematic);
     background-color: black;
     content: '';
-    
 }
 div.announcerCard > .announcerText{
     font-size: var(--announcer-text);
@@ -56,6 +55,9 @@ div.announcerCard > .announcerText{
 
 main{
     height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer{
     height: 10vh;
