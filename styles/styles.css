@@ -133,6 +133,9 @@ div.buttonBoard > button{
     border-radius: 50%;
     background-color: var(--display-grey);
 }
+div.buttonBoard > button:hover{
+    background-color: var(--right-green);
+}
 div.buttonBoard > button.rock{
     transition: all ease-in-out 0.03s;
     box-shadow: var(--button-shadow) var(--button-shadow) var(--rock-blue);
@@ -141,6 +144,7 @@ div.buttonBoard > button.rock:active{
     top: var(--button-shadow);
     left: var(--button-shadow);
     box-shadow: 0 0 var(--rock-blue);
+    background-color: var(--right-green);
 }
 div.buttonBoard > button.paper{
     transition: all ease-in-out 0.03s;
@@ -150,6 +154,7 @@ div.buttonBoard > button.paper:active{
     top: var(--button-shadow);
     left: var(--button-shadow);
     box-shadow: 0 0 var(--paper-red);
+    background-color: var(--right-green);
 }
 div.buttonBoard > button.scissors{
     transition: all ease-in-out 0.03s;
@@ -159,6 +164,7 @@ div.buttonBoard > button.scissors:active{
     top: var(--button-shadow);
     left: var(--button-shadow);
     box-shadow: 0 0 var(--scissors-yellow);
+    background-color: var(--right-green);
 }
 div.buttonBoard > button > object{
     width: var(--button-dimension);
