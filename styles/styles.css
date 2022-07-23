@@ -9,6 +9,7 @@
     --display-black: #000000;
     --display-grey: #F1F1F1;
     --right-green: #A6FFA6;
+    --wrong-red: #FF5A5A;
     --rock-blue: #6262FFAA;
     --paper-red: #FF5A5A77;
     --scissors-yellow: #FFED4ABB;
@@ -172,4 +173,11 @@ footer{
 }
 div.copyrightCard{
     font-size: var(--copyright-text);
+}
+div.copyrightCard > p > a.license{
+    color: var(--wrong-red);
+    text-decoration: none;
+}
+div.copyrightCard > p > a.license:hover{
+    text-decoration: underline;
 }
