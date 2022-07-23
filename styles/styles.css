@@ -12,14 +12,20 @@
     --rock-blue: #6262FFAA;
     --paper-red: #FF5A5A77;
     --scissors-yellow: #FFED4ABB;
-    --announcer-card: min(80%, 90rem);
-    --announcer-hr-pos: clamp(4rem, 10vw, 9rem);
-    --announcer-text: clamp(1rem, 5vw, 5rem);
-    --score-board: min(35%, 30rem);
-    --score-board-text: clamp(2rem, 4vw, 4rem);
-    --choice-card: min(40vw, 30rem);
-    --copyright-text: clamp(1.2rem, 3vw, 2rem);
-    --shadow-pos: min(1vw, 0.8rem);
+    --default-card-width: min(80%, 90rem);
+    --host-card-width: min(80%, 75rem);
+    --host-hr-height: clamp(0.3rem, 1vw, 0.4rem);
+    --host-hr-origin: clamp(4rem, 9vw, 6rem);
+    --host-text: clamp(2rem, 4vw, 3rem);
+    --score-board-width: min(100%, 90rem);
+    --user-score-board: min(35%, 25rem);
+    --user-score-text: clamp(1.5rem, 3vh, 3rem);
+    --user-choice-card: clamp(14rem, 30vw, 18rem);
+    --button-board-width: min(80%, 70rem);
+    --button-padding: clamp(1rem, 3vw, 1.5rem);
+    --button-dimension: clamp(3rem, 10vw, 4rem);
+    --button-shadow: clamp(0.3rem, 1vw, 0.5rem);
+    --copyright-text: clamp(0.8rem, 3vw, 1.5rem);
 }
 
 html{
@@ -41,21 +47,21 @@ header{
     justify-content: center;
     align-items: center;
 }
-div.announcerCard{
-    width: var(--announcer-card);
+div.hostCard{
+    width: var(--host-card-width);
     text-align: center;
 }
-div.announcerCard::before{
+div.hostCard::before{
     width: 100%;
-    height: clamp(0.5rem, 1vw, 0.7rem);
+    height: var(--host-hr-height);
     display: flex;
     position: relative;
-    top: var(--announcer-hr-pos);
+    top: var(--host-hr-origin);
     background-color: black;
     content: '';
 }
-div.announcerCard > .announcerText{
-    font-size: var(--announcer-text);
+div.hostCard > .hostText{
+    font-size: var(--host-text);
 }
 
 main{
@@ -67,11 +73,11 @@ main{
 }
 div.scoreBoard{
     margin: auto 0;
-    width: min(100%, 100rem);
-    height: clamp(5rem, 10vw, 10rem);
+    width: var(--score-board-width);
+    height: clamp(5rem, 5vw, 10rem);
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: repeat(2, var(--score-board));
+    grid-template-columns: repeat(2, var(--user-score-board));
 }
 div.playerScore, div.aiScore{
     display: grid;
@@ -81,7 +87,7 @@ div.playerScore > div, div.aiScore > div{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--score-board-text);
+    font-size: var(--user-score-text);
 }
 div.playerScore > div.player, div.aiScore > div.ai{
     border-right: 0.3rem solid var(--display-black);
@@ -89,11 +95,11 @@ div.playerScore > div.player, div.aiScore > div.ai{
 }
 div.displayBoard{
     margin: auto 0;
-    width: 100%;
-    height: min(40vw, 30rem);
+    width: var(--default-card-width);
+    height: var(--user-choice-card);
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, var(--choice-card));
+    grid-template-columns: repeat(2, var(--user-choice-card));
 }
 div.displayBoard > div{
     display: flex;
@@ -104,58 +110,58 @@ div.displayBoard > div.playerChoice{
     border-right: 0.5rem solid var(--display-black);
 }
 div.playerChoice > object{
-    width: 45%;
+    width: 40%;
     transform: rotate(45deg);
 }
 div.aiChoice > object{
-    width: 45%;
+    width: 40%;
     transform: rotate(-45deg);
 }
 div.buttonBoard{
     margin: auto 0;
-    width: min(100%, 100rem);
-    height: min(25vw, 15rem);
+    width: var(--button-board-width);
+    height: min(20vw, 12rem);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 div.buttonBoard > button{
     position: relative;
-    padding: min(4vw, 2.5rem);
+    padding: var(--button-padding);
     border: none;
     border-radius: 50%;
     background-color: var(--display-grey);
 }
 div.buttonBoard > button.rock{
     transition: all ease-in-out 0.03s;
-    box-shadow: var(--shadow-pos) var(--shadow-pos) var(--rock-blue);
+    box-shadow: var(--button-shadow) var(--button-shadow) var(--rock-blue);
 }
 div.buttonBoard > button.rock:active{
-    top: var(--shadow-pos);
-    left: var(--shadow-pos);
+    top: var(--button-shadow);
+    left: var(--button-shadow);
     box-shadow: 0 0 var(--rock-blue);
 }
 div.buttonBoard > button.paper{
     transition: all ease-in-out 0.03s;
-    box-shadow: var(--shadow-pos) var(--shadow-pos) var(--paper-red);
+    box-shadow: var(--button-shadow) var(--button-shadow) var(--paper-red);
 }
 div.buttonBoard > button.paper:active{
-    top: var(--shadow-pos);
-    left: var(--shadow-pos);
+    top: var(--button-shadow);
+    left: var(--button-shadow);
     box-shadow: 0 0 var(--paper-red);
 }
 div.buttonBoard > button.scissors{
     transition: all ease-in-out 0.03s;
-    box-shadow: var(--shadow-pos) var(--shadow-pos) var(--scissors-yellow);
+    box-shadow: var(--button-shadow) var(--button-shadow) var(--scissors-yellow);
 }
 div.buttonBoard > button.scissors:active{
-    top: var(--shadow-pos);
-    left: var(--shadow-pos);
+    top: var(--button-shadow);
+    left: var(--button-shadow);
     box-shadow: 0 0 var(--scissors-yellow);
 }
 div.buttonBoard > button > object{
-    width: min(10vw, 8rem);
-    height: min(10vw, 8rem);
+    width: var(--button-dimension);
+    height: var(--button-dimension);
 }
 
 footer{
