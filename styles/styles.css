@@ -204,3 +204,39 @@ div.copyrightCard > p > a.license:hover{
 .aiBackground{
     background-color: var(--wrong-red) !important;
 }
+
+@keyframes playerSide {
+    0%{
+        background-color: none;
+    }
+    50%{
+        background-color: var(--right-green);
+    }
+    100%{
+        background-color: none;
+    }
+}
+
+@keyframes aiSide {
+    0%{
+        background-color: none;
+    }
+    50%{
+        background-color: var(--wrong-red);
+    }
+    100%{
+        background-color: none;
+    }
+}
+
+@keyframes selecting {
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: var(--display-grey);
+    }
+    100%{
+        background-color: white;
+    }
+}
