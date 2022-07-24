@@ -180,9 +180,16 @@ footer{
 div.copyrightCard{
     font-size: var(--copyright-text);
 }
+div.copyrightCard > p > a.profile{
+    color: var(--wrong-red);
+    text-decoration: none;
+}
 div.copyrightCard > p > a.license{
     color: var(--wrong-red);
     text-decoration: none;
+}
+div.copyrightCard > p > a.profile:hover{
+    text-decoration: underline;
 }
 div.copyrightCard > p > a.license:hover{
     text-decoration: underline;
