@@ -105,7 +105,6 @@ div.displayBoard{
 div.displayBoard > div{
     display: flex;
     justify-content: center;
-    background-color: var(--display-grey);
 }
 div.displayBoard > div.playerChoice{
     border-right: 0.5rem solid var(--display-black);
