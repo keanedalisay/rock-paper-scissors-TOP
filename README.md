@@ -2,9 +2,17 @@
 
 This directory is for me to store the Rock Paper Scissors project I made for The Odin Project curriculum.
 
-Here are the steps on how to play it:
+## GUI for RoPaSc is here!
 
-1. Clone this repository to your computer. 
+https://nyevergator.github.io/rock-paper-scissors-TOP/
+
+Above is the link to the RoPaSc game itself, with a makeover! What do you think of the UI? And the code behind it? Check it out! You are either going to get confused or if you understand most of it... then great!
+
+Feel free to clone (gui code is in **gui branch**) and modify what I made to be better as I am already done with this. You might have some great ideas in mind.
+
+## Console Game is still available. Here's how to set it up:
+
+1. Clone this repository, specifically the **main branch**, into your computer. 
 2. Set up both HTML and JavaScript files to your code editor.
 3. Run the HTML file to display webpage.
 4. A prompt will pop-up on the webpage but before you enter something:
@@ -14,12 +22,6 @@ Here are the steps on how to play it:
 5. There you go, you can now play RoPaSc! 
     * Refresh webpage if you encounter any problems.
     * Also refresh webpage if the game is over.
-
-## GUI for RoPaSc is coming!
-
-As of writing, the game is only playable in the Developer Console (as well as through the prompt pop-up) but once I learn how to manipulate the DOM through JavaScript, it's possible that I will be revisiting this project and make a separate branch for the GUI.
-
-Stay tuned!
 
 ## License
 
