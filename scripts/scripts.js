@@ -3,14 +3,10 @@ buttons.forEach((button) => {
     button.addEventListener('click', playRound);
 })
 
-
-
 function computerPlay(){
-    const objectInPlay = ['ROCK', 'PAPER', 'SCISSORS'];
+    const objectInPlay = ['rock', 'paper', 'scissors'];
     const randomObject = Math.floor(Math.random() * 3);
     return objectInPlay[randomObject];
 }
-
-
 
 
