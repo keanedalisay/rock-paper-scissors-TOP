@@ -198,12 +198,7 @@ div.copyrightCard > p > a.license:hover{
 .scissorsYellow{
     background-color: var(--scissors-yellow) !important;
 }
-.userBackground{
-    background-color: var(--right-green) !important;
-}
-.aiBackground{
-    background-color: var(--wrong-red) !important;
-}
+
 
 @keyframes playerSide {
     0%{
