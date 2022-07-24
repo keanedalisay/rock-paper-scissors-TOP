@@ -16,8 +16,8 @@
     --default-card-width: min(80%, 90rem);
     --host-card-width: min(80%, 75rem);
     --host-hr-height: clamp(0.3rem, 1vw, 0.4rem);
-    --host-hr-origin: clamp(4rem, 9vw, 6rem);
-    --host-text: clamp(2rem, 4vw, 3rem);
+    --host-hr-origin: clamp(3rem, 9vw, 4rem);
+    --host-text: clamp(1rem, 4vw, 2rem);
     --score-board-width: min(100%, 90rem);
     --user-score-board: min(35%, 25rem);
     --user-score-text: clamp(1.5rem, 3vh, 3rem);
