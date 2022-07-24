@@ -166,7 +166,7 @@ div.buttonBoard > button.scissors:active{
     box-shadow: 0 0 var(--scissors-yellow);
     background-color: var(--right-green);
 }
-div.buttonBoard > button > object{
+div.buttonBoard > button > svg{
     width: var(--button-dimension);
     height: var(--button-dimension);
 }
