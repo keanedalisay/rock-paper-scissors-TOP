@@ -1,6 +1,6 @@
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('div.buttonBoard > button');
 buttons.forEach((button) => {
-    button.addEventListener('click', playRound)
+    button.addEventListener('click', playRound);
 })
 
 
