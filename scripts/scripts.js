@@ -1,9 +1,3 @@
-function aiPlay(){
-    const objectInPlay = ['rock', 'paper', 'scissors'];
-    const randomObject = Math.floor(Math.random() * 3);
-    return objectInPlay[randomObject];
-}
-const aiSelection = aiPlay();
 
 const hostDisplay = document.querySelector('div.hostCard > .hostText');
 hostDisplay.textContent = 'Welcome to Rock Paper Scissors!';
@@ -39,6 +33,7 @@ setTimeout(function() {
     playerDisplay.classList.add('selecting');
     aiBoard.classList.remove('aiSide');
     aiDisplay.classList.remove('aiSide');
+
     rockButton.addEventListener('click', playRound);
     paperButton.addEventListener('click', playRound);
     scissorsButton.addEventListener('click', playRound);
@@ -77,7 +72,16 @@ function ai(e){
     }
 }
 
-function playRound (e){
+let aiSelection;
+
+function playRound(e){
+    function aiPlay(){
+        const objectInPlay = ['rock', 'paper', 'scissors'];
+        const randomObject = Math.floor(Math.random() * 3);
+        return objectInPlay[randomObject];
+    }
+    aiSelection = aiPlay();
+
     const playerSelection = this.getAttribute('class');
 
     if (playerSelection === 'rock'){
@@ -107,6 +111,9 @@ function playRound (e){
                 playerDisplay.classList.add('selecting');
                 aiDisplay.classList.remove('selecting');
                 hostDisplay.textContent = '...'
+                rockButton.addEventListener('click', playRound);
+                paperButton.addEventListener('click', playRound);
+                scissorsButton.addEventListener('click', playRound);
             }, 8000)
 
         } else if (playerSelection && aiSelection === 'paper'){
@@ -122,6 +129,9 @@ function playRound (e){
                 playerDisplay.classList.add('selecting');
                 aiDisplay.classList.remove('selecting');
                 hostDisplay.textContent = '...'
+                rockButton.addEventListener('click', playRound);
+                paperButton.addEventListener('click', playRound);
+                scissorsButton.addEventListener('click', playRound);
             }, 8000)
 
         } else if (playerSelection && aiSelection === 'scissors'){
@@ -137,6 +147,9 @@ function playRound (e){
                 playerDisplay.classList.add('selecting');
                 aiDisplay.classList.remove('selecting');
                 hostDisplay.textContent = '...'
+                rockButton.addEventListener('click', playRound);
+                paperButton.addEventListener('click', playRound);
+                scissorsButton.addEventListener('click', playRound);
             }, 8000)
 
         } else {
@@ -169,6 +182,9 @@ function playRound (e){
                 playerDisplay.classList.add('selecting');
                 aiDisplay.classList.remove('selecting');
                 hostDisplay.textContent = '...'
+                rockButton.addEventListener('click', playRound);
+                paperButton.addEventListener('click', playRound);
+                scissorsButton.addEventListener('click', playRound);
             }, 8000)
 
         } else if (playerSelection && aiSelection === 'scissors'){
@@ -184,6 +200,9 @@ function playRound (e){
                 playerDisplay.classList.add('selecting');
                 aiDisplay.classList.remove('selecting');
                 hostDisplay.textContent = '...'
+                rockButton.addEventListener('click', playRound);
+                paperButton.addEventListener('click', playRound);
+                scissorsButton.addEventListener('click', playRound);
             }, 8000)
 
         } else if (playerSelection && aiSelection === 'rock'){
@@ -199,6 +218,9 @@ function playRound (e){
                 playerDisplay.classList.add('selecting');
                 aiDisplay.classList.remove('selecting');
                 hostDisplay.textContent = '...'
+                rockButton.addEventListener('click', playRound);
+                paperButton.addEventListener('click', playRound);
+                scissorsButton.addEventListener('click', playRound);
             }, 8000)
 
         } else {
@@ -232,6 +254,9 @@ function playRound (e){
                 playerDisplay.classList.add('selecting');
                 aiDisplay.classList.remove('selecting');
                 hostDisplay.textContent = '...'
+                rockButton.addEventListener('click', playRound);
+                paperButton.addEventListener('click', playRound);
+                scissorsButton.addEventListener('click', playRound);
             }, 8000)
 
         } else if (playerSelection && aiSelection === 'rock'){
@@ -247,6 +272,9 @@ function playRound (e){
                 playerDisplay.classList.add('selecting');
                 aiDisplay.classList.remove('selecting');
                 hostDisplay.textContent = '...'
+                rockButton.addEventListener('click', playRound);
+                paperButton.addEventListener('click', playRound);
+                scissorsButton.addEventListener('click', playRound);
             }, 8000)
 
         } else if (playerSelection && aiSelection === 'paper'){
@@ -262,6 +290,9 @@ function playRound (e){
                 playerDisplay.classList.add('selecting');
                 aiDisplay.classList.remove('selecting');
                 hostDisplay.textContent = '...'
+                rockButton.addEventListener('click', playRound);
+                paperButton.addEventListener('click', playRound);
+                scissorsButton.addEventListener('click', playRound);
             }, 8000)
 
         } else {
