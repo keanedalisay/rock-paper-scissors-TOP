@@ -188,3 +188,19 @@ div.copyrightCard > p > a.license{
 div.copyrightCard > p > a.license:hover{
     text-decoration: underline;
 }
+
+.rockBlue{
+    background-color: var(--rock-blue);
+}
+.paperRed{
+    background-color: var(--paper-red);
+}
+.scissorsYellow{
+    background-color: var(--scissors-yellow);
+}
+.userBackground{
+    background-color: var(--right-green);
+}
+.aiBackground{
+    background-color: var(--wrong-red);
+}
