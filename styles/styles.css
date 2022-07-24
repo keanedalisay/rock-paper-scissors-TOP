@@ -190,17 +190,17 @@ div.copyrightCard > p > a.license:hover{
 }
 
 .rockBlue{
-    background-color: var(--rock-blue);
+    background-color: var(--rock-blue) !important;
 }
 .paperRed{
-    background-color: var(--paper-red);
+    background-color: var(--paper-red) !important;
 }
 .scissorsYellow{
-    background-color: var(--scissors-yellow);
+    background-color: var(--scissors-yellow) !important;
 }
 .userBackground{
-    background-color: var(--right-green);
+    background-color: var(--right-green) !important;
 }
 .aiBackground{
-    background-color: var(--wrong-red);
+    background-color: var(--wrong-red) !important;
 }
