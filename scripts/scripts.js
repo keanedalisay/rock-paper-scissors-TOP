@@ -15,3 +15,8 @@ const playerChoice = document.querySelector('div.playerChoice > object');
 
 const aiDisplay = document.querySelector('div.aiChoice');
 const aiChoice = document.querySelector('div.aiChoice > object');
+
+const buttons = document.querySelectorAll('div.buttonBoard > button');
+buttons.forEach((button) => {
+    setTimeout(function() {button.addEventListener('click', playRound)}, 11000);
+})
