@@ -30,11 +30,14 @@ setTimeout(function() {aiDisplay.classList.add('aiSide')}, 5000);
 setTimeout(function() {aiBoard.classList.remove('aiSide')}, 11000);
 setTimeout(function() {aiDisplay.classList.remove('aiSide')}, 11000);
 
-const buttons = document.querySelectorAll('div.buttonBoard > button');
-buttons.forEach((button) => {
-    setTimeout(function() {playerDisplay.classList.add('selecting')}, 11000);
-    setTimeout(function() {button.addEventListener('click', playRound)}, 11000);
-}) 
+const rockButton = document.querySelector('div.buttonBoard > button.rock');
+const paperButton = document.querySelector('div.buttonBoard > button.paper');
+const scissorsButton = document.querySelector('div.buttonBoard > button.scissors');
+
+setTimeout(function() {rockButton.addEventListener('click', playRound)}, 11000);
+setTimeout(function() {paperButton.addEventListener('click', playRound)}, 11000);
+setTimeout(function() {scissorsButton.addEventListener('click', playRound)}, 11000);
+setTimeout(function() {playerDisplay.classList.add('selecting')}, 11000);
 
 function ai(e){
     const aiPlay = computerPlay();
