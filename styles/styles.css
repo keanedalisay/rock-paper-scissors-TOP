@@ -197,7 +197,15 @@ div.copyrightCard > p > a.license:hover{
 .scissorsYellow{
     background-color: var(--scissors-yellow) !important;
 }
-
+.playerSide{
+    animation: playerSide 1s ease-in-out infinite;
+}
+.aiSide{
+    animation: aiSide 1s ease-in-out infinite;
+}
+.selecting{
+    animation: selecting 1s ease-in-out infinite;
+}
 
 @keyframes playerSide {
     0%{
