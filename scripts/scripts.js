@@ -21,7 +21,15 @@ const playerChoice = document.querySelector('div.playerChoice > object');
 const aiDisplay = document.querySelector('div.aiChoice');
 const aiChoice = document.querySelector('div.aiChoice > object');
 
+setTimeout(function() {playerBoard.classList.remove('playerSide')}, 6000)
+setTimeout(function() {playerDisplay.classList.remove('playerSide')}, 6000)
+
+setTimeout(function() {aiBoard.classList.add('aiSide')}, 6000);
+setTimeout(function() {aiDisplay.classList.add('aiSide')}, 6000);
+setTimeout(function() {aiBoard.classList.remove('aiSide')}, 12000);
+setTimeout(function() {aiDisplay.classList.remove('aiSide')}, 12000);
+
 const buttons = document.querySelectorAll('div.buttonBoard > button');
 buttons.forEach((button) => {
-    setTimeout(function() {button.addEventListener('click', playRound)}, 000);
+    setTimeout(function() {button.addEventListener('click', playRound)}, 11000);
 }) 
