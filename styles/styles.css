@@ -14,13 +14,13 @@
     --paper-red: #FF5A5A77;
     --scissors-yellow: #FFED4ABB;
     --default-card-width: min(80%, 90rem);
-    --host-card-width: min(80%, 75rem);
+    --host-card-width: min(80%, 65rem);
     --host-hr-height: clamp(0.3rem, 1vw, 0.4rem);
     --host-hr-origin: clamp(3rem, 9vw, 4rem);
     --host-text: clamp(1rem, 3vw, 2rem);
-    --score-board-width: min(100%, 90rem);
+    --score-board-width: min(100%, 60rem);
     --user-score-board: min(35%, 25rem);
-    --user-score-text: clamp(1.5rem, 2vh, 3rem);
+    --user-score-text: clamp(1.5rem, 3.5vh, 3rem);
     --user-choice-card: clamp(12rem, 30vw, 18rem);
     --button-board-width: min(80%, 70rem);
     --button-padding: clamp(1rem, 3vw, 1.5rem);
@@ -75,7 +75,7 @@ main{
 div.scoreBoard{
     margin: auto 0;
     width: var(--score-board-width);
-    height: clamp(5rem, 5vw, 10rem);
+    height: clamp(5rem, 5vw, 15rem);
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(2, var(--user-score-board));
