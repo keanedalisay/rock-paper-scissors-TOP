@@ -134,6 +134,7 @@ div.buttonBoard > button{
     background-color: var(--display-grey);
 }
 div.buttonBoard > button:hover{
+    cursor: pointer;
     background-color: var(--right-green);
 }
 div.buttonBoard > button.rock{
