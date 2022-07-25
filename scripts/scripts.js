@@ -83,7 +83,7 @@ function playRound(e){
 
     buttonAudio.play();
     buttonAudio.currentTime = 0.41;
-    buttonAudio.volume = 0.2;
+    buttonAudio.volume = 0.5;
 
     function aiPlay(){
         const objectInPlay = ['rock', 'paper', 'scissors'];
@@ -96,7 +96,7 @@ function playRound(e){
 
     if (aiScore.textContent == 5){
         loseAudio.play();
-        loseAudio.volume = 0.1;
+        loseAudio.volume = 0.7;
         hostDisplay.textContent = 'AI wins! Looks like you suck at this game... or are you?';
         hostDisplay.style.backgroundColor = '#FF5A5A';
         rockButton.removeEventListener('click', playRound);
@@ -107,7 +107,7 @@ function playRound(e){
 
     } else if (playerScore.textContent == 5){
         winAudio.play();
-        winAudio.volume = 0.1;
+        winAudio.volume = 0.7;
         hostDisplay.textContent = 'You won! Well done... Mann beats machine!';
         hostDisplay.style.backgroundColor = '#A6FFA6';
         rockButton.removeEventListener('click', playRound);
@@ -153,7 +153,7 @@ function playRound(e){
                 setTimeout(function() {
                     pointAudio.play();
                     pointAudio.currentTime = 0.25;
-                    pointAudio.volume = 0.1;
+                    pointAudio.volume = 0.7;
                     hostDisplay.textContent = 'AI takes the lead! Rock is consumed by paper.';
                     ++aiScore.textContent;
                     aiBoard.classList.add('aiSide');
@@ -174,7 +174,7 @@ function playRound(e){
                 setTimeout(function() {
                     pointAudio.play();
                     pointAudio.currentTime = 0.25;
-                    pointAudio.volume = 0.1;
+                    pointAudio.volume = 0.7;
                     hostDisplay.textContent = 'You won a point! Rock snaps scissors!';
                     ++playerScore.textContent;
                     playerBoard.classList.add('playerSide');
@@ -230,7 +230,7 @@ function playRound(e){
                 setTimeout(function() {
                     pointAudio.play();
                     pointAudio.currentTime = 0.25;
-                    pointAudio.volume = 0.1;
+                    pointAudio.volume = 0.7;
                     hostDisplay.textContent = 'AI cuts through paper, point for it!';
                     ++aiScore.textContent;
                     aiBoard.classList.add('aiSide');
@@ -251,7 +251,7 @@ function playRound(e){
                 setTimeout(function() {
                     pointAudio.play();
                     pointAudio.currentTime = 0.25;
-                    pointAudio.volume = 0.1;
+                    pointAudio.volume = 0.7;
                     hostDisplay.textContent = 'A point for you catching that rock!';
                     ++playerScore.textContent;
                     playerBoard.classList.add('playerSide');
@@ -308,7 +308,7 @@ function playRound(e){
                 setTimeout(function() {
                     pointAudio.play();
                     pointAudio.currentTime = 0.25;
-                    pointAudio.volume = 0.1;
+                    pointAudio.volume = 0.7;
                     hostDisplay.textContent = 'Scissors has no effect on rock... AI leads!';
                     ++aiScore.textContent;
                     aiBoard.classList.add('aiSide');
@@ -329,7 +329,7 @@ function playRound(e){
                 setTimeout(function() {
                     pointAudio.play();
                     pointAudio.currentTime = 0.25;
-                    pointAudio.volume = 0.1;
+                    pointAudio.volume = 0.7;
                     hostDisplay.textContent = 'Your scissors slices through! A point!';
                     ++playerScore.textContent;
                     playerBoard.classList.add('playerSide');
