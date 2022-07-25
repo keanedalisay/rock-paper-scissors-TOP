@@ -28,10 +28,11 @@ const rockButton = document.querySelector('div.buttonBoard > button.rock');
 const paperButton = document.querySelector('div.buttonBoard > button.paper');
 const scissorsButton = document.querySelector('div.buttonBoard > button.scissors');
 
-const buttonAudio = new Audio ('./audio/buttonAudio.mp3');
-const pointAudio = new Audio ('./audio/pointAudio.mp3');
-const winAudio = new Audio ('./audio/winAudio.mp3');
-const loseAudio = new Audio ('./audio/loseAudio.mp3');
+const lobbyAudio = document.querySelector('audio#lobbyAudio');
+const buttonAudio = document.querySelector('audio#buttonAudio');
+const pointAudio = document.querySelector('audio#pointAudio');
+const winAudio = document.querySelector('audio#winAudio');
+const loseAudio = document.querySelector('audio#loseAudio');
 
 setTimeout(function() {
     playerDisplay.classList.add('selecting');
