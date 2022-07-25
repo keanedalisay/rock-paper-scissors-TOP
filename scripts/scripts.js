@@ -34,10 +34,6 @@ const pointAudio = document.querySelector('audio#pointAudio');
 const winAudio = document.querySelector('audio#winAudio');
 const loseAudio = document.querySelector('audio#loseAudio');
 
-lobbyAudio.play();
-lobbyAudio.volume = 0.01;
-setTimeout(() => lobbyAudio.pause(), 11000);
-
 setTimeout(function() {
     playerDisplay.classList.add('selecting');
     aiBoard.classList.remove('aiSide');
@@ -111,7 +107,7 @@ function playRound(e){
 
     } else if (playerScore.textContent == 5){
         winAudio.play();
-        winAudio.volume = 0.07;
+        winAudio.volume = 0.1;
         hostDisplay.textContent = 'You won! Well done... Mann beats machine!';
         hostDisplay.style.backgroundColor = '#A6FFA6';
         rockButton.removeEventListener('click', playRound);
