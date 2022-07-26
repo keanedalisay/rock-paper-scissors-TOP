@@ -4,7 +4,7 @@ This directory is for me to store the Rock Paper Scissors project I made for The
 
 ## GUI for RoPaSc is here!
 
-https://nyevergator.github.io/rock-paper-scissors-TOP/
+https://keanedalisay.github.io/rock-paper-scissors-TOP/
 
 Above is the link to the RoPaSc game itself, with a makeover! What do you think of the UI? And the code behind it? Check it out! You are either going to get confused or if you understand most of it... then great!
 
