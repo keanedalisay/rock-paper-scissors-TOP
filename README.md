@@ -13,6 +13,8 @@ RoPaSc's main features include:
 
 Here's a preview of it in action!
 
+https://user-images.githubusercontent.com/101083161/182099071-a5a0c1a7-cda8-4792-92a9-6fe62b4c6e3a.mp4
+
 ## Where to play it?
 
 https://keanedalisay.github.io/rock-paper-scissors-TOP/
