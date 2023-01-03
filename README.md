@@ -17,7 +17,7 @@ https://user-images.githubusercontent.com/101083161/182098680-a3909ade-ce87-4478
 
 ## Where to play it?
 
-https://keanedalisay.github.io/rock-paper-scissors-TOP/
+https://keanedalisay.github.io/ropasc/
 
 Visit the link above and you'll start right away. Have fun!
 
